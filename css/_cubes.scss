@@ -1,0 +1,88 @@
+.scene {
+    width: $size;
+    height: $size;
+    perspective: 600px;
+    margin: 20px;
+    transform: rotateY(20deg); 
+}
+
+.cube {
+    width: $size;
+    height: $size;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(20deg);
+    transition: transform 1s;
+}
+
+.cube-face {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  background: red;
+  opacity: 0.5;
+  text-align: center;
+}
+
+.cube-face-front {
+    border: 1px solid white;
+    background:goldenrod;
+    transform: translate3d(0, 0, $size/2);
+}
+
+.cube-face-back {
+    border: 1px solid white;
+    background: gray;
+    transform: rotateY(180deg) translate3d(0, 0, $size/2);
+    opacity: 1;
+}
+
+.cube-face-left {
+    border: 1px solid white;
+    background: chocolate;
+    transform: rotateY(-90deg) translate3d(0, 0, $size/2);
+}
+
+.cube-face-right {
+    border: 1px solid white;
+    background: black;
+    transform: rotateY(90deg) translate3d(0, 0, $size/2);
+}
+
+.cube-face-top {
+    border: 1px solid white;
+    background: black;
+    transform: rotateX(90deg) translate3d(0, 0, $size/2);
+}
+
+.cube-face-bottom {
+    border: 1px solid white;
+    background:black;
+    transform: rotateX(-90deg) translate3d(0, 0, $size/2);
+}
+
+.flipped {
+    transform: rotateY(170deg);
+}
+
+.victory {
+    transform: rotateZ(100deg);
+}
+
+.victory {
+    animation: highlight 2s;
+}
+
+@keyframes highlight {
+    25% {
+        background-color: lightgreen;
+    }
+
+    50% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: lightgreen;
+    }
+}

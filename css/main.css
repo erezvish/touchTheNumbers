@@ -1,0 +1,122 @@
+.scene {
+  width: 70px;
+  height: 70px;
+  perspective: 600px;
+  margin: 20px;
+  transform: rotateY(20deg); }
+
+.cube {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateY(20deg);
+  transition: transform 1s; }
+
+.cube-face {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  background: red;
+  opacity: 0.5;
+  text-align: center; }
+
+.cube-face-front {
+  border: 1px solid white;
+  background: goldenrod;
+  transform: translate3d(0, 0, 35px); }
+
+.cube-face-back {
+  border: 1px solid white;
+  background: gray;
+  transform: rotateY(180deg) translate3d(0, 0, 35px);
+  opacity: 1; }
+
+.cube-face-left {
+  border: 1px solid white;
+  background: chocolate;
+  transform: rotateY(-90deg) translate3d(0, 0, 35px); }
+
+.cube-face-right {
+  border: 1px solid white;
+  background: black;
+  transform: rotateY(90deg) translate3d(0, 0, 35px); }
+
+.cube-face-top {
+  border: 1px solid white;
+  background: black;
+  transform: rotateX(90deg) translate3d(0, 0, 35px); }
+
+.cube-face-bottom {
+  border: 1px solid white;
+  background: black;
+  transform: rotateX(-90deg) translate3d(0, 0, 35px); }
+
+.flipped {
+  transform: rotateY(170deg); }
+
+.victory {
+  transform: rotateZ(100deg); }
+
+.victory {
+  animation: highlight 2s; }
+
+@keyframes highlight {
+  25% {
+    background-color: lightgreen; }
+  50% {
+    background-color: green; }
+  100% {
+    background-color: lightgreen; } }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: lightgrey; }
+
+.display {
+  background-image: url(../img/download.jpg);
+  border: 3px solid gold;
+  text-align: center;
+  max-width: 700px; }
+
+.container {
+  justify-content: center; }
+
+.row {
+  display: inline-block; }
+
+button {
+  display: block;
+  height: 40px;
+  width: 120px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5%;
+  font-size: 1rem; }
+
+.level-picker {
+  background-color: #60adc0;
+  border: 2px solid #434343;
+  font-size: 1.2rem;
+  margin: 10px; }
+  .level-picker h4 {
+    text-decoration: underline;
+    margin: 0; }
+
+.output-to-user {
+  display: flex;
+  justify-content: space-around; }
+  .output-to-user h2 {
+    background-color: goldenrod;
+    border: 2px solid #434343;
+    width: 120px;
+    height: 60px;
+    text-align: center; }
+  .output-to-user h3 {
+    background-color: #60adc0;
+    border: 2px solid #434343;
+    width: 120px;
+    height: 50px;
+    text-align: center; }

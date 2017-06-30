@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touch the Numbers!</title>
+    <!--<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">-->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="text-center">
+        <h1>Touch the Numbers</h1>
+    </header>
+    <main>
+        <div class="display">
+            <section class="control-area text-center">
+                <div class="choices-area">
+                    <button onclick="runGame()"> New Game </button>
+                    <div class="level-picker">
+                        <h4>Choose Your Level</h4>
+                        <input type="radio" name="level" value="16" checked onclick="radioClicked(this)"> Easy(16)
+                        <input type="radio" name="level" value="25" onclick="radioClicked(this)"> Hard(25)
+                        <input type="radio" name="level" value="36" onclick="radioClicked(this)"> Extreme(36)
+                    </div>
+                    <div class="output-to-user">
+                        <h3 class="timer"> Game Time</h3> 
+                        <h2 class="status"> Playing</h2> 
+                        <h3 class="next-number">Next Number</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container board-area"></section>
+        </div>
+    </main>
+
+    <script src="lib/jquery/jquery-3.2.1.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

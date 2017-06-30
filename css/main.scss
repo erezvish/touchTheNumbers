@@ -1,0 +1,65 @@
+@import 'vars';
+@import 'cubes';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgrey;
+}
+
+.display {
+    background-image: url(../img/download.jpg);
+    border: 3px solid gold;
+    text-align: center;
+    max-width: 700px;
+}
+
+.container {
+    justify-content: center;
+}
+
+.row {
+    display: inline-block;
+}
+
+button {
+    display: block;
+    height: 40px;
+    width: 120px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5%;
+    font-size: 1rem;
+}
+
+.level-picker {
+    background-color: #60adc0;
+    border: 2px solid #434343;
+    font-size: 1.2rem;
+    margin: 10px;
+    h4 {
+        text-decoration: underline;
+        margin: 0;
+    }
+}
+
+.output-to-user {
+    display: flex;
+    justify-content: space-around;
+     h2 {
+        background-color: goldenrod;
+        border: 2px solid #434343;
+        width: 120px;
+        height: 60px;    
+        text-align: center;
+    }   
+    h3 {
+        background-color: #60adc0;
+        border: 2px solid #434343;
+        width: 120px;
+        height: 50px;    
+        text-align: center;
+    }
+}
